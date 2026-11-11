@@ -1,0 +1,6 @@
+{"device":"echo-dot","mac":"74:c2:46:4d:fe:36","pi":"pi5","scenario":"newdest","time":"2026-10-25T01:24:05Z","type":"echo-dot"}
+{"device":"roku","mac":"b0:a7:37:d6:23:d3","pi":"pi5","scenario":"beacon","time":"2026-10-25T01:34:05Z","type":"roku"}
+{"arg":"192.168.60.160,192.168.60.131,192.168.60.154,192.168.60.137,192.168.60.132,192.168.60.126,192.168.60.184,192.168.60.158,192.168.60.193,192.168.60.104","device":"hue-bridge","mac":"00:17:88:35:f7:71","pi":"pi5","scenario":"scan","time":"2026-10-25T01:44:06Z","type":"hue-bridge"}
+{"device":"nest-mini-1","mac":"f4:f5:d8:0b:a4:c6","pi":"pi5","scenario":"exfil","time":"2026-10-25T01:54:05Z","type":"google-nest-mini"}
+{"device":"lg-tv","mac":"20:17:42:94:df:a7","pi":"pi5","scenario":"newdest","time":"2026-10-25T02:04:05Z","type":"lg-tv"}
+{"device":"wyze-cam-2","mac":"2c:aa:8e:f5:47:8a","pi":"pi5","scenario":"exfil","time":"2026-10-25T02:14:05Z","type":"wyze-cam"}

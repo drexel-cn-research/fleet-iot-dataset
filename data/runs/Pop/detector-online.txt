@@ -1,0 +1,46 @@
+106 windows, Oct 25 06:07 to Oct 25 14:55, 21 devices, warm-up 12 windows, k=3.0, recur=3
+
+FLAGS (consecutive windows of one behavior are one episode)
+  Oct 25 07:15  kasa-plug-1      new_domain first contact with nist.gov   [no injection (unexplained)]
+  Oct 25 07:30  kasa-plug-2      new_domain first contact with nist.gov   [no injection (unexplained)]
+  Oct 25 07:35  ecobee           new_domain first contact with ntp.org   [no injection (unexplained)]
+  Oct 25 07:40  hue-bridge       conns      22 vs baseline 2   [no injection (unexplained)]
+  Oct 25 08:15  hue-bridge       new_rhythm new rigid contact rhythm meethue.com:443@180s   [no injection (unexplained)]
+  Oct 25 09:25  hue-bridge       new_rhythm new rigid contact rhythm meethue.com:443@330s   [no injection (unexplained)]
+  Oct 25 09:45  hue-bridge       flows      21 vs baseline 2   [no injection (unexplained)]
+  Oct 25 09:45  hue-bridge       conns      21 vs baseline 2   [no injection (unexplained)]
+  Oct 25 10:05  hik-cam-1        new_rhythm new rigid contact rhythm lan:9000@30s   [matches beacon at 10:05:40]
+  Oct 25 10:10  hik-cam-1        conns      12 vs baseline 3   [matches beacon at 10:05:40]
+  Oct 25 10:25  wyze-cam-1       new_rhythm new rigid contact rhythm lan:9000@30s   [matches beacon at 10:25:39]
+  Oct 25 10:30  wyze-cam-2       new_rhythm new rigid contact rhythm lan:9000@30s   [matches beacon at 10:27:39]
+  Oct 25 10:45  echo-dot         new_dest   4 vs baseline 1   [matches newdest at 10:45:39]
+  Oct 25 10:45  echo-dot         new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 10:45:39]
+  Oct 25 11:05  nest-mini-1      new_dest   4 vs baseline 0   [matches newdest at 11:05:39]
+  Oct 25 11:05  nest-mini-1      new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 11:05:39]
+  Oct 25 11:05  nest-mini-2      new_dest   4 vs baseline 0   [matches newdest at 11:07:39]
+  Oct 25 11:05  nest-mini-2      new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 11:07:39]
+  Oct 25 11:25  kasa-plug-1      new_dest   4 vs baseline 0   [matches newdest at 11:25:39]
+  Oct 25 11:25  kasa-plug-1      new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 11:25:39]
+  Oct 25 11:45  hue-bridge       conns      21 vs baseline 2   [no injection (unexplained)]
+  Oct 25 11:45  tuya-plug-1      new_dest   4 vs baseline 0   [matches newdest at 11:45:39]
+  Oct 25 11:45  tuya-plug-1      new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 11:45:39]
+  Oct 25 11:50  kasa-plug-2      new_dest   4 vs baseline 0   [matches newdest at 11:50:40]
+  Oct 25 11:50  kasa-plug-2      new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 11:50:40]
+  Oct 25 11:55  shelly-plug      dst_count  5 vs baseline 1   [matches newdest at 11:55:39]
+  Oct 25 11:55  shelly-plug      new_dest   4 vs baseline 0   [matches newdest at 11:55:39]
+  Oct 25 11:55  shelly-plug      new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 11:55:39]
+
+INJECTED EVENTS
+  Oct 25 10:05:40  hik-cam-1        beacon   caught (new_rhythm, conns)
+  Oct 25 10:25:39  wyze-cam-1       beacon   caught (new_rhythm)
+  Oct 25 11:25:39  kasa-plug-1      newdest  caught (new_dest, new_domain)
+  Oct 25 11:45:39  tuya-plug-1      newdest  caught (new_dest, new_domain)
+  Oct 25 11:50:40  kasa-plug-2      newdest  caught (new_dest, new_domain)
+  Oct 25 10:27:39  wyze-cam-2       beacon   caught (new_rhythm)
+  Oct 25 10:45:39  echo-dot         newdest  caught (new_dest, new_domain)
+  Oct 25 11:05:39  nest-mini-1      newdest  caught (new_dest, new_domain)
+  Oct 25 11:07:39  nest-mini-2      newdest  caught (new_dest, new_domain)
+  Oct 25 11:55:39  shelly-plug      newdest  caught (dst_count, new_dest, new_domain)
+
+10 of 10 scored injections caught; 9 flag(s) with no injection behind them
+false positives: 9 unexplained episode(s) over 6.5 supervised device-days = 1.39 per device-day

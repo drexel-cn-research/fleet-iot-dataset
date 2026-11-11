@@ -1,0 +1,20 @@
+{
+  "pi": "pi5",
+  "parent": "eth0",
+  "sink": "192.168.50.192:9000",
+  "control": ":7070",
+  "speed": 1,
+  "scan_peers": ["RPI4-IoT:7070"],
+  "devices": [
+    { "name": "hue-bridge",   "type": "hue-bridge" },
+    { "name": "nest-mini-1",  "type": "google-nest-mini" },
+    { "name": "nest-mini-2",  "type": "google-nest-mini" },
+    { "name": "echo-dot",     "type": "echo-dot" },
+    { "name": "roku",         "type": "roku" },
+    { "name": "lg-tv",        "type": "lg-tv" },
+    { "name": "sonos-one",    "type": "sonos-one" },
+    { "name": "hp-printer",   "type": "hp-printer" },
+    { "name": "shelly-plug",  "type": "shelly-plug" },
+    { "name": "wyze-cam-2",   "type": "wyze-cam" }
+  ]
+}

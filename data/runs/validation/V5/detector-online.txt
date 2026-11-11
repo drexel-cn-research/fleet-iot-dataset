@@ -1,0 +1,53 @@
+88 windows, Oct 20 22:22 to Oct 21 05:40, 20 devices, warm-up 12 windows, k=3.0, recur=3
+
+FLAGS (consecutive windows of one behavior are one episode)
+  Oct 20 23:30  kasa-plug-2      new_domain first contact with nist.gov   [no injection (unexplained)]
+  Oct 20 23:30  wyze-cam-2       tx_bytes   4.0MB vs baseline 2.9KB   [no injection (unexplained)]
+  Oct 20 23:35  hik-cam-2        tx_bytes   3.5MB vs baseline 5.5KB   [no injection (unexplained)]
+  Oct 20 23:40  wyze-cam-1       tx_bytes   1.2MB vs baseline 4.0KB   [no injection (unexplained)]
+  Oct 20 23:55  hik-cam-1        tx_bytes   2.1MB vs baseline 4.2KB   [no injection (unexplained)]
+  Oct 21 00:00  hue-bridge       conns      24 vs baseline 2   [no injection (unexplained)]
+  Oct 21 00:10  hik-cam-1        tx_bytes   5.6MB vs baseline 4.2KB   [no injection (unexplained)]
+  Oct 21 00:10  wyze-cam-2       tx_bytes   2.0MB vs baseline 2.9KB   [no injection (unexplained)]
+  Oct 21 01:25  nest-thermostat  new_rhythm new rigid contact rhythm nest.com:443@240s   [no injection (unexplained)]
+  Oct 21 02:00  hue-bridge       conns      22 vs baseline 2   [no injection (unexplained)]
+  Oct 21 02:20  hue-bridge       conns      23 vs baseline 2   [no injection (unexplained)]
+  Oct 21 03:30  hik-cam-1        tx_bytes   88.5MB vs baseline 5.6MB   [matches exfil at 03:30:39]
+  Oct 21 03:35  echo-dot         new_dest   4 vs baseline 0   [matches newdest at 03:35:40]
+  Oct 21 03:35  echo-dot         new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 03:35:40]
+  Oct 21 03:40  wyze-cam-1       flows      90 vs baseline 2   [matches scan at 03:40:40]
+  Oct 21 03:40  wyze-cam-1       lan_peers  12 vs baseline 2   [matches scan at 03:40:40]
+  Oct 21 03:45  roku             new_rhythm new rigid contact rhythm lan:9000@30s   [matches beacon at 03:45:39]
+  Oct 21 03:50  ring-doorbell    tx_bytes   143.1MB vs baseline 3.3KB   [matches exfil at 03:50:39]
+  Oct 21 03:50  roku             conns      11 vs baseline 2   [matches beacon at 03:45:39]
+  Oct 21 03:55  hue-bridge       flows      90 vs baseline 21   [matches scan at 03:55:40]
+  Oct 21 03:55  hue-bridge       lan_peers  13 vs baseline 4   [matches scan at 03:55:40]
+  Oct 21 04:00  kasa-plug-1      new_dest   4 vs baseline 0   [matches newdest at 04:00:39]
+  Oct 21 04:00  kasa-plug-1      new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 04:00:39]
+  Oct 21 04:05  nest-mini-1      tx_bytes   61.0MB vs baseline 30.0KB   [matches exfil at 04:05:39]
+  Oct 21 04:10  ecobee           conns      9 vs baseline 1 (2 windows, to 04:20, peak 11)   [matches beacon at 04:10:39]
+  Oct 21 04:10  ecobee           new_rhythm new rigid contact rhythm lan:9000@30s   [matches beacon at 04:10:39]
+  Oct 21 04:15  lg-tv            new_dest   4 vs baseline 1   [matches newdest at 04:15:39]
+  Oct 21 04:15  lg-tv            new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 04:15:39]
+  Oct 21 04:20  tuya-plug-1      flows      90 vs baseline 3   [matches scan at 04:20:40]
+  Oct 21 04:20  tuya-plug-1      lan_peers  11 vs baseline 1   [matches scan at 04:20:40]
+  Oct 21 04:25  wyze-cam-2       tx_bytes   60.1MB vs baseline 3.4MB   [matches exfil at 04:25:39]
+
+INJECTED EVENTS
+  Oct 20 22:27:47  nest-thermostat  scan     MISSED
+  Oct 20 22:56:23  nest-thermostat  scan     MISSED
+  Oct 21 03:30:39  hik-cam-1        exfil    caught (tx_bytes)
+  Oct 21 03:40:40  wyze-cam-1       scan     caught (flows, lan_peers)
+  Oct 21 03:50:39  ring-doorbell    exfil    caught (tx_bytes)
+  Oct 21 04:00:39  kasa-plug-1      newdest  caught (new_dest, new_domain)
+  Oct 21 04:10:39  ecobee           beacon   caught (conns, new_rhythm)
+  Oct 21 04:20:40  tuya-plug-1      scan     caught (flows, lan_peers)
+  Oct 21 03:35:40  echo-dot         newdest  caught (new_dest, new_domain)
+  Oct 21 03:45:39  roku             beacon   caught (new_rhythm, conns)
+  Oct 21 03:55:40  hue-bridge       scan     caught (flows, lan_peers)
+  Oct 21 04:05:39  nest-mini-1      exfil    caught (tx_bytes)
+  Oct 21 04:15:39  lg-tv            newdest  caught (new_dest, new_domain)
+  Oct 21 04:25:39  wyze-cam-2       exfil    caught (tx_bytes)
+
+12 of 14 injections caught; 11 flag(s) with no injection behind them
+false positives: 11 unexplained episode(s) over 5.3 supervised device-days = 2.09 per device-day

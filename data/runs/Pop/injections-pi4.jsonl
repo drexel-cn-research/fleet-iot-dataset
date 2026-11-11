@@ -1,0 +1,5 @@
+{"device":"hik-cam-1","mac":"08:54:11:d7:f1:56","pi":"pi4","scenario":"beacon","time":"2026-10-25T14:05:40Z","type":"hikvision-cam"}
+{"device":"wyze-cam-1","mac":"2c:aa:8e:16:b8:1e","pi":"pi4","scenario":"beacon","time":"2026-10-25T14:25:39Z","type":"wyze-cam"}
+{"device":"kasa-plug-1","mac":"00:5f:67:30:4a:8f","pi":"pi4","scenario":"newdest","time":"2026-10-25T15:25:39Z","type":"kasa-plug"}
+{"device":"tuya-plug-1","mac":"10:5a:17:27:d2:ae","pi":"pi4","scenario":"newdest","time":"2026-10-25T15:45:39Z","type":"tuya-plug"}
+{"device":"kasa-plug-2","mac":"00:5f:67:fe:33:54","pi":"pi4","scenario":"newdest","time":"2026-10-25T15:50:40Z","type":"kasa-plug"}

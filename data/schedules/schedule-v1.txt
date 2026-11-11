@@ -1,0 +1,19 @@
+# Injection schedule v1: committed before the run, as the methodology
+# promises. One injection every 30 minutes (5.5 hours total), so episodes
+# never overlap; each class gets a different scenario, and one of each twin
+# pair (hik-cam-1/2, wyze-cam-1/2, nest-mini-1/2, kasa-plug-1/2, tuya-plug-1/2)
+# stays clean for later fleet comparisons.
+#
+# minutes-after-start  pi        scenario  device
+0    RPI4-IoT  exfil    hik-cam-1
+30   RPI5-IoT  newdest  echo-dot
+60   RPI4-IoT  scan     wyze-cam-1
+90   RPI5-IoT  beacon   roku
+120  RPI4-IoT  exfil    ring-doorbell
+150  RPI5-IoT  scan     hue-bridge
+180  RPI4-IoT  newdest  kasa-plug-1
+210  RPI5-IoT  exfil    nest-mini-1
+240  RPI4-IoT  beacon   ecobee
+270  RPI5-IoT  newdest  lg-tv
+300  RPI4-IoT  scan     tuya-plug-1
+330  RPI5-IoT  exfil    wyze-cam-2

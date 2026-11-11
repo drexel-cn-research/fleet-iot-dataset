@@ -1,0 +1,1080 @@
+{
+ "tod=True w=0": {
+  "single|local": {
+   "fp": 223,
+   "days": 21.64,
+   "rate": 10.31,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|local": {
+   "fp": 402,
+   "days": 43.18,
+   "rate": 9.31,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|local": {
+   "fp": 67,
+   "days": 9.19,
+   "rate": 7.29,
+   "caught": 12,
+   "scored": 12
+  },
+  "single|fleet": {
+   "fp": 157,
+   "days": 21.64,
+   "rate": 7.26,
+   "caught": 14,
+   "scored": 20
+  },
+  "all|fleet": {
+   "fp": 165,
+   "days": 43.18,
+   "rate": 3.82,
+   "caught": 40,
+   "scored": 46
+  },
+  "run|N1|fleet": {
+   "fp": 34,
+   "days": 9.19,
+   "rate": 3.7,
+   "caught": 10,
+   "scored": 12
+  },
+  "single|combined": {
+   "fp": 195,
+   "days": 21.64,
+   "rate": 9.01,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|combined": {
+   "fp": 198,
+   "days": 43.18,
+   "rate": 4.59,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|combined": {
+   "fp": 34,
+   "days": 9.19,
+   "rate": 3.7,
+   "caught": 12,
+   "scored": 12
+  },
+  "twin|local": {
+   "fp": 179,
+   "days": 21.54,
+   "rate": 8.31,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|fleet": {
+   "fp": 8,
+   "days": 21.54,
+   "rate": 0.37,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|combined": {
+   "fp": 3,
+   "days": 21.54,
+   "rate": 0.14,
+   "caught": 26,
+   "scored": 26
+  },
+  "run|N2|local": {
+   "fp": 86,
+   "days": 10.43,
+   "rate": 8.25,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|N2|fleet": {
+   "fp": 32,
+   "days": 10.43,
+   "rate": 3.07,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|N2|combined": {
+   "fp": 44,
+   "days": 10.43,
+   "rate": 4.22,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|local": {
+   "fp": 81,
+   "days": 5.88,
+   "rate": 13.77,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|fleet": {
+   "fp": 31,
+   "days": 5.88,
+   "rate": 5.27,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|Day|combined": {
+   "fp": 38,
+   "days": 5.88,
+   "rate": 6.46,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Ctrl|local": {
+   "fp": 87,
+   "days": 10.38,
+   "rate": 8.38,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|fleet": {
+   "fp": 40,
+   "days": 10.38,
+   "rate": 3.85,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|combined": {
+   "fp": 44,
+   "days": 10.38,
+   "rate": 4.24,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Pop|local": {
+   "fp": 81,
+   "days": 7.29,
+   "rate": 11.11,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|fleet": {
+   "fp": 28,
+   "days": 7.29,
+   "rate": 3.84,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|combined": {
+   "fp": 38,
+   "days": 7.29,
+   "rate": 5.21,
+   "caught": 10,
+   "scored": 10
+  }
+ },
+ "tod=True w=3": {
+  "single|local": {
+   "fp": 103,
+   "days": 21.24,
+   "rate": 4.85,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|local": {
+   "fp": 153,
+   "days": 42.37,
+   "rate": 3.61,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|local": {
+   "fp": 36,
+   "days": 9.08,
+   "rate": 3.97,
+   "caught": 12,
+   "scored": 12
+  },
+  "single|fleet": {
+   "fp": 86,
+   "days": 21.24,
+   "rate": 4.05,
+   "caught": 14,
+   "scored": 20
+  },
+  "all|fleet": {
+   "fp": 93,
+   "days": 42.37,
+   "rate": 2.19,
+   "caught": 40,
+   "scored": 46
+  },
+  "run|N1|fleet": {
+   "fp": 23,
+   "days": 9.08,
+   "rate": 2.53,
+   "caught": 10,
+   "scored": 12
+  },
+  "single|combined": {
+   "fp": 104,
+   "days": 21.24,
+   "rate": 4.9,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|combined": {
+   "fp": 106,
+   "days": 42.37,
+   "rate": 2.5,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|combined": {
+   "fp": 21,
+   "days": 9.08,
+   "rate": 2.31,
+   "caught": 12,
+   "scored": 12
+  },
+  "twin|local": {
+   "fp": 50,
+   "days": 21.14,
+   "rate": 2.37,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|fleet": {
+   "fp": 7,
+   "days": 21.14,
+   "rate": 0.33,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|combined": {
+   "fp": 2,
+   "days": 21.14,
+   "rate": 0.09,
+   "caught": 26,
+   "scored": 26
+  },
+  "run|N2|local": {
+   "fp": 34,
+   "days": 10.26,
+   "rate": 3.31,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|N2|fleet": {
+   "fp": 17,
+   "days": 10.26,
+   "rate": 1.66,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|N2|combined": {
+   "fp": 25,
+   "days": 10.26,
+   "rate": 2.44,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|local": {
+   "fp": 19,
+   "days": 5.68,
+   "rate": 3.34,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|fleet": {
+   "fp": 13,
+   "days": 5.68,
+   "rate": 2.29,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|Day|combined": {
+   "fp": 15,
+   "days": 5.68,
+   "rate": 2.64,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Ctrl|local": {
+   "fp": 37,
+   "days": 10.23,
+   "rate": 3.62,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|fleet": {
+   "fp": 27,
+   "days": 10.23,
+   "rate": 2.64,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|combined": {
+   "fp": 27,
+   "days": 10.23,
+   "rate": 2.64,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Pop|local": {
+   "fp": 27,
+   "days": 7.12,
+   "rate": 3.79,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|fleet": {
+   "fp": 13,
+   "days": 7.12,
+   "rate": 1.83,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|combined": {
+   "fp": 18,
+   "days": 7.12,
+   "rate": 2.53,
+   "caught": 10,
+   "scored": 10
+  }
+ },
+ "tod=True w=6": {
+  "single|local": {
+   "fp": 63,
+   "days": 20.72,
+   "rate": 3.04,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|local": {
+   "fp": 89,
+   "days": 41.33,
+   "rate": 2.15,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|local": {
+   "fp": 14,
+   "days": 8.87,
+   "rate": 1.58,
+   "caught": 12,
+   "scored": 12
+  },
+  "single|fleet": {
+   "fp": 50,
+   "days": 20.72,
+   "rate": 2.41,
+   "caught": 14,
+   "scored": 20
+  },
+  "all|fleet": {
+   "fp": 57,
+   "days": 41.33,
+   "rate": 1.38,
+   "caught": 40,
+   "scored": 46
+  },
+  "run|N1|fleet": {
+   "fp": 13,
+   "days": 8.87,
+   "rate": 1.47,
+   "caught": 10,
+   "scored": 12
+  },
+  "single|combined": {
+   "fp": 64,
+   "days": 20.72,
+   "rate": 3.09,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|combined": {
+   "fp": 66,
+   "days": 41.33,
+   "rate": 1.6,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|combined": {
+   "fp": 10,
+   "days": 8.87,
+   "rate": 1.13,
+   "caught": 12,
+   "scored": 12
+  },
+  "twin|local": {
+   "fp": 26,
+   "days": 20.62,
+   "rate": 1.26,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|fleet": {
+   "fp": 7,
+   "days": 20.62,
+   "rate": 0.34,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|combined": {
+   "fp": 2,
+   "days": 20.62,
+   "rate": 0.1,
+   "caught": 26,
+   "scored": 26
+  },
+  "run|N2|local": {
+   "fp": 24,
+   "days": 10.05,
+   "rate": 2.39,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|N2|fleet": {
+   "fp": 11,
+   "days": 10.05,
+   "rate": 1.09,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|N2|combined": {
+   "fp": 18,
+   "days": 10.05,
+   "rate": 1.79,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|local": {
+   "fp": 12,
+   "days": 5.48,
+   "rate": 2.19,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|fleet": {
+   "fp": 7,
+   "days": 5.48,
+   "rate": 1.28,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|Day|combined": {
+   "fp": 8,
+   "days": 5.48,
+   "rate": 1.46,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Ctrl|local": {
+   "fp": 24,
+   "days": 10.02,
+   "rate": 2.39,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|fleet": {
+   "fp": 20,
+   "days": 10.02,
+   "rate": 2.0,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|combined": {
+   "fp": 20,
+   "days": 10.02,
+   "rate": 2.0,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Pop|local": {
+   "fp": 15,
+   "days": 6.91,
+   "rate": 2.17,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|fleet": {
+   "fp": 6,
+   "days": 6.91,
+   "rate": 0.87,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|combined": {
+   "fp": 10,
+   "days": 6.91,
+   "rate": 1.45,
+   "caught": 10,
+   "scored": 10
+  }
+ },
+ "tod=True w=12": {
+  "single|local": {
+   "fp": 39,
+   "days": 19.67,
+   "rate": 1.98,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|local": {
+   "fp": 49,
+   "days": 39.25,
+   "rate": 1.25,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|local": {
+   "fp": 8,
+   "days": 8.45,
+   "rate": 0.95,
+   "caught": 12,
+   "scored": 12
+  },
+  "single|fleet": {
+   "fp": 31,
+   "days": 19.67,
+   "rate": 1.58,
+   "caught": 14,
+   "scored": 20
+  },
+  "all|fleet": {
+   "fp": 37,
+   "days": 39.25,
+   "rate": 0.94,
+   "caught": 40,
+   "scored": 46
+  },
+  "run|N1|fleet": {
+   "fp": 9,
+   "days": 8.45,
+   "rate": 1.06,
+   "caught": 10,
+   "scored": 12
+  },
+  "single|combined": {
+   "fp": 40,
+   "days": 19.67,
+   "rate": 2.03,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|combined": {
+   "fp": 41,
+   "days": 39.25,
+   "rate": 1.04,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|combined": {
+   "fp": 6,
+   "days": 8.45,
+   "rate": 0.71,
+   "caught": 12,
+   "scored": 12
+  },
+  "twin|local": {
+   "fp": 10,
+   "days": 19.58,
+   "rate": 0.51,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|fleet": {
+   "fp": 6,
+   "days": 19.58,
+   "rate": 0.31,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|combined": {
+   "fp": 1,
+   "days": 19.58,
+   "rate": 0.05,
+   "caught": 26,
+   "scored": 26
+  },
+  "run|N2|local": {
+   "fp": 16,
+   "days": 9.64,
+   "rate": 1.66,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|N2|fleet": {
+   "fp": 7,
+   "days": 9.64,
+   "rate": 0.73,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|N2|combined": {
+   "fp": 13,
+   "days": 9.64,
+   "rate": 1.35,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|local": {
+   "fp": 3,
+   "days": 5.06,
+   "rate": 0.59,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|fleet": {
+   "fp": 3,
+   "days": 5.06,
+   "rate": 0.59,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|Day|combined": {
+   "fp": 3,
+   "days": 5.06,
+   "rate": 0.59,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Ctrl|local": {
+   "fp": 13,
+   "days": 9.61,
+   "rate": 1.35,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|fleet": {
+   "fp": 15,
+   "days": 9.61,
+   "rate": 1.56,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|combined": {
+   "fp": 12,
+   "days": 9.61,
+   "rate": 1.25,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Pop|local": {
+   "fp": 9,
+   "days": 6.5,
+   "rate": 1.39,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|fleet": {
+   "fp": 3,
+   "days": 6.5,
+   "rate": 0.46,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|combined": {
+   "fp": 7,
+   "days": 6.5,
+   "rate": 1.08,
+   "caught": 10,
+   "scored": 10
+  }
+ },
+ "tod=True w=24": {
+  "single|local": {
+   "fp": 28,
+   "days": 17.59,
+   "rate": 1.59,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|local": {
+   "fp": 29,
+   "days": 35.08,
+   "rate": 0.83,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|local": {
+   "fp": 3,
+   "days": 7.62,
+   "rate": 0.39,
+   "caught": 12,
+   "scored": 12
+  },
+  "single|fleet": {
+   "fp": 25,
+   "days": 17.59,
+   "rate": 1.42,
+   "caught": 14,
+   "scored": 20
+  },
+  "all|fleet": {
+   "fp": 30,
+   "days": 35.08,
+   "rate": 0.86,
+   "caught": 40,
+   "scored": 46
+  },
+  "run|N1|fleet": {
+   "fp": 7,
+   "days": 7.62,
+   "rate": 0.92,
+   "caught": 10,
+   "scored": 12
+  },
+  "single|combined": {
+   "fp": 29,
+   "days": 17.59,
+   "rate": 1.65,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|combined": {
+   "fp": 30,
+   "days": 35.08,
+   "rate": 0.86,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|combined": {
+   "fp": 3,
+   "days": 7.62,
+   "rate": 0.39,
+   "caught": 12,
+   "scored": 12
+  },
+  "twin|local": {
+   "fp": 1,
+   "days": 17.49,
+   "rate": 0.06,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|fleet": {
+   "fp": 5,
+   "days": 17.49,
+   "rate": 0.29,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|combined": {
+   "fp": 1,
+   "days": 17.49,
+   "rate": 0.06,
+   "caught": 26,
+   "scored": 26
+  },
+  "run|N2|local": {
+   "fp": 13,
+   "days": 8.8,
+   "rate": 1.48,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|N2|fleet": {
+   "fp": 7,
+   "days": 8.8,
+   "rate": 0.8,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|N2|combined": {
+   "fp": 12,
+   "days": 8.8,
+   "rate": 1.36,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|local": {
+   "fp": 1,
+   "days": 4.23,
+   "rate": 0.24,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|fleet": {
+   "fp": 2,
+   "days": 4.23,
+   "rate": 0.47,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|Day|combined": {
+   "fp": 2,
+   "days": 4.23,
+   "rate": 0.47,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Ctrl|local": {
+   "fp": 7,
+   "days": 8.77,
+   "rate": 0.8,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|fleet": {
+   "fp": 12,
+   "days": 8.77,
+   "rate": 1.37,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|combined": {
+   "fp": 8,
+   "days": 8.77,
+   "rate": 0.91,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Pop|local": {
+   "fp": 5,
+   "days": 5.66,
+   "rate": 0.88,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|fleet": {
+   "fp": 2,
+   "days": 5.66,
+   "rate": 0.35,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|combined": {
+   "fp": 5,
+   "days": 5.66,
+   "rate": 0.88,
+   "caught": 10,
+   "scored": 10
+  }
+ },
+ "tod=False w=0": {
+  "single|fleet": {
+   "fp": 148,
+   "days": 21.64,
+   "rate": 6.84,
+   "caught": 14,
+   "scored": 20
+  },
+  "all|fleet": {
+   "fp": 148,
+   "days": 43.18,
+   "rate": 3.43,
+   "caught": 40,
+   "scored": 46
+  },
+  "run|N1|fleet": {
+   "fp": 29,
+   "days": 9.19,
+   "rate": 3.16,
+   "caught": 10,
+   "scored": 12
+  },
+  "single|combined": {
+   "fp": 194,
+   "days": 21.64,
+   "rate": 8.97,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|combined": {
+   "fp": 194,
+   "days": 43.18,
+   "rate": 4.49,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|combined": {
+   "fp": 34,
+   "days": 9.19,
+   "rate": 3.7,
+   "caught": 12,
+   "scored": 12
+  },
+  "twin|fleet": {
+   "fp": 0,
+   "days": 21.54,
+   "rate": 0.0,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|combined": {
+   "fp": 0,
+   "days": 21.54,
+   "rate": 0.0,
+   "caught": 26,
+   "scored": 26
+  },
+  "run|N2|fleet": {
+   "fp": 32,
+   "days": 10.43,
+   "rate": 3.07,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|N2|combined": {
+   "fp": 44,
+   "days": 10.43,
+   "rate": 4.22,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|fleet": {
+   "fp": 29,
+   "days": 5.88,
+   "rate": 4.93,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|Day|combined": {
+   "fp": 36,
+   "days": 5.88,
+   "rate": 6.12,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Ctrl|fleet": {
+   "fp": 30,
+   "days": 10.38,
+   "rate": 2.89,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|combined": {
+   "fp": 42,
+   "days": 10.38,
+   "rate": 4.05,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Pop|fleet": {
+   "fp": 28,
+   "days": 7.29,
+   "rate": 3.84,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|combined": {
+   "fp": 38,
+   "days": 7.29,
+   "rate": 5.21,
+   "caught": 10,
+   "scored": 10
+  }
+ },
+ "tod=False w=12": {
+  "single|fleet": {
+   "fp": 22,
+   "days": 19.67,
+   "rate": 1.12,
+   "caught": 14,
+   "scored": 20
+  },
+  "all|fleet": {
+   "fp": 22,
+   "days": 39.25,
+   "rate": 0.56,
+   "caught": 40,
+   "scored": 46
+  },
+  "run|N1|fleet": {
+   "fp": 4,
+   "days": 8.45,
+   "rate": 0.47,
+   "caught": 10,
+   "scored": 12
+  },
+  "single|combined": {
+   "fp": 39,
+   "days": 19.67,
+   "rate": 1.98,
+   "caught": 20,
+   "scored": 20
+  },
+  "all|combined": {
+   "fp": 39,
+   "days": 39.25,
+   "rate": 0.99,
+   "caught": 46,
+   "scored": 46
+  },
+  "run|N1|combined": {
+   "fp": 6,
+   "days": 8.45,
+   "rate": 0.71,
+   "caught": 12,
+   "scored": 12
+  },
+  "twin|fleet": {
+   "fp": 0,
+   "days": 19.58,
+   "rate": 0.0,
+   "caught": 26,
+   "scored": 26
+  },
+  "twin|combined": {
+   "fp": 0,
+   "days": 19.58,
+   "rate": 0.0,
+   "caught": 26,
+   "scored": 26
+  },
+  "run|N2|fleet": {
+   "fp": 7,
+   "days": 9.64,
+   "rate": 0.73,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|N2|combined": {
+   "fp": 13,
+   "days": 9.64,
+   "rate": 1.35,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Day|fleet": {
+   "fp": 2,
+   "days": 5.06,
+   "rate": 0.4,
+   "caught": 10,
+   "scored": 12
+  },
+  "run|Day|combined": {
+   "fp": 2,
+   "days": 5.06,
+   "rate": 0.4,
+   "caught": 12,
+   "scored": 12
+  },
+  "run|Ctrl|fleet": {
+   "fp": 6,
+   "days": 9.61,
+   "rate": 0.62,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Ctrl|combined": {
+   "fp": 11,
+   "days": 9.61,
+   "rate": 1.14,
+   "caught": 0,
+   "scored": 0
+  },
+  "run|Pop|fleet": {
+   "fp": 3,
+   "days": 6.5,
+   "rate": 0.46,
+   "caught": 10,
+   "scored": 10
+  },
+  "run|Pop|combined": {
+   "fp": 7,
+   "days": 6.5,
+   "rate": 1.08,
+   "caught": 10,
+   "scored": 10
+  }
+ }
+}

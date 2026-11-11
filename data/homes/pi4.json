@@ -1,0 +1,20 @@
+{
+  "pi": "pi4",
+  "parent": "eth0",
+  "sink": "192.168.50.192:9000",
+  "control": ":7070",
+  "speed": 1,
+  "scan_peers": ["RPI5-IoT:7070"],
+  "devices": [
+    { "name": "hik-cam-1",       "type": "hikvision-cam" },
+    { "name": "hik-cam-2",       "type": "hikvision-cam" },
+    { "name": "wyze-cam-1",      "type": "wyze-cam" },
+    { "name": "ring-doorbell",   "type": "ring-doorbell" },
+    { "name": "tuya-plug-1",     "type": "tuya-plug" },
+    { "name": "tuya-plug-2",     "type": "tuya-plug" },
+    { "name": "kasa-plug-1",     "type": "kasa-plug" },
+    { "name": "kasa-plug-2",     "type": "kasa-plug" },
+    { "name": "ecobee",          "type": "ecobee" },
+    { "name": "nest-thermostat", "type": "nest-thermostat" }
+  ]
+}

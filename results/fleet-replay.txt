@@ -1,0 +1,71 @@
+
+######## eval_fleet.py
+
+local w12              caught 46/46  FP 49 / 39.2 d = 1.25   | N1 12/12 8fp 0.95  N2 12/12 16fp 1.66  Day 12/12 3fp 0.59  Ctrl 0/0 13fp 1.35  Pop 10/10 9fp 1.39
+fleet w12              caught 46/46  FP 11 / 39.2 d = 0.28   | N1 12/12 0fp 0.00  N2 12/12 4fp 0.42  Day 12/12 1fp 0.20  Ctrl 0/0 6fp 0.62  Pop 10/10 0fp 0.00
+combined w12           caught 46/46  FP 11 / 39.2 d = 0.28   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.62  Day 12/12 1fp 0.20  Ctrl 0/0 4fp 0.42  Pop 10/10 0fp 0.00
+combined w0            caught 46/46  FP 17 / 43.2 d = 0.39   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.58  Day 12/12 4fp 0.68  Ctrl 0/0 6fp 0.58  Pop 10/10 1fp 0.14
+
+######## sweeps.py
+
+== warm-up sweep (time of day on)
+local w0               caught 46/46  FP 402 / 43.2 d = 9.31   | N1 12/12 67fp 7.29  N2 12/12 86fp 8.25  Day 12/12 81fp 13.77  Ctrl 0/0 87fp 8.38  Pop 10/10 81fp 11.11
+combined w0            caught 46/46  FP 17 / 43.2 d = 0.39   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.58  Day 12/12 4fp 0.68  Ctrl 0/0 6fp 0.58  Pop 10/10 1fp 0.14
+local w3               caught 46/46  FP 153 / 42.4 d = 3.61   | N1 12/12 36fp 3.97  N2 12/12 34fp 3.31  Day 12/12 19fp 3.34  Ctrl 0/0 37fp 3.62  Pop 10/10 27fp 3.79
+combined w3            caught 46/46  FP 13 / 42.4 d = 0.31   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.58  Day 12/12 1fp 0.18  Ctrl 0/0 6fp 0.59  Pop 10/10 0fp 0.00
+local w6               caught 46/46  FP 89 / 41.3 d = 2.15   | N1 12/12 14fp 1.58  N2 12/12 24fp 2.39  Day 12/12 12fp 2.19  Ctrl 0/0 24fp 2.39  Pop 10/10 15fp 2.17
+combined w6            caught 46/46  FP 12 / 41.3 d = 0.29   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.60  Day 12/12 1fp 0.18  Ctrl 0/0 5fp 0.50  Pop 10/10 0fp 0.00
+local w12              caught 46/46  FP 49 / 39.2 d = 1.25   | N1 12/12 8fp 0.95  N2 12/12 16fp 1.66  Day 12/12 3fp 0.59  Ctrl 0/0 13fp 1.35  Pop 10/10 9fp 1.39
+combined w12           caught 46/46  FP 11 / 39.2 d = 0.28   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.62  Day 12/12 1fp 0.20  Ctrl 0/0 4fp 0.42  Pop 10/10 0fp 0.00
+local w24              caught 46/46  FP 29 / 35.1 d = 0.83   | N1 12/12 3fp 0.39  N2 12/12 13fp 1.48  Day 12/12 1fp 0.24  Ctrl 0/0 7fp 0.80  Pop 10/10 5fp 0.88
+combined w24           caught 46/46  FP 9 / 35.1 d = 0.26   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.68  Day 12/12 1fp 0.24  Ctrl 0/0 2fp 0.23  Pop 10/10 0fp 0.00
+== tau sweep, combined w12
+tau 0.25               caught 46/46  FP 6 / 39.2 d = 0.15   | N1 12/12 0fp 0.00  N2 12/12 3fp 0.31  Day 12/12 1fp 0.20  Ctrl 0/0 2fp 0.21  Pop 10/10 0fp 0.00
+tau 0.5                caught 46/46  FP 11 / 39.2 d = 0.28   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.62  Day 12/12 1fp 0.20  Ctrl 0/0 4fp 0.42  Pop 10/10 0fp 0.00
+tau 0.75               caught 46/46  FP 11 / 39.2 d = 0.28   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.62  Day 12/12 1fp 0.20  Ctrl 0/0 4fp 0.42  Pop 10/10 0fp 0.00
+== time-of-day ablation
+combined w0 tod        caught 46/46  FP 17 / 43.2 d = 0.39   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.58  Day 12/12 4fp 0.68  Ctrl 0/0 6fp 0.58  Pop 10/10 1fp 0.14
+combined w0 no-tod     caught 46/46  FP 11 / 43.2 d = 0.25   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.58  Day 12/12 0fp 0.00  Ctrl 0/0 5fp 0.48  Pop 10/10 0fp 0.00
+combined w12 tod       caught 46/46  FP 11 / 39.2 d = 0.28   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.62  Day 12/12 1fp 0.20  Ctrl 0/0 4fp 0.42  Pop 10/10 0fp 0.00
+combined w12 no-tod    caught 46/46  FP 9 / 39.2 d = 0.23   | N1 12/12 0fp 0.00  N2 12/12 6fp 0.62  Day 12/12 0fp 0.00  Ctrl 0/0 3fp 0.31  Pop 10/10 0fp 0.00
+
+######## preexisting.py
+
+('combined', 'beacon') 9/9
+('combined', 'exfil') 12/12
+('combined', 'newdest') 16/16
+('combined', 'scan') 9/9
+('local', 'beacon') 0/9
+('local', 'exfil') 0/12
+('local', 'newdest') 0/16
+('local', 'scan') 0/9
+combined w0, false alarms on those device histories: 1 over 10.1 device-days
+
+######## rq1.py
+
+camera            instances 20  n0 median    6.9  min   4.3  capped 1/7
+doorbell          instances  5  n0 median  144.0  min  22.2  capped 4/7
+iot_generic       instances 10  n0 median  144.0  min 144.0  capped 7/7
+printer           instances  5  n0 median  144.0  min 144.0  capped 7/7
+smart_hub         instances  5  n0 median  144.0  min   8.4  capped 4/7
+smart_plug        instances 15  n0 median    1.9  min   1.0  capped 1/7
+smart_speaker     instances 20  n0 median    5.9  min   1.8  capped 1/7
+smart_tv          instances  5  n0 median   45.9  min  10.2  capped 2/7
+streaming_device  instances  5  n0 median  144.0  min   5.7  capped 4/7
+thermostat        instances 10  n0 median   58.6  min   5.7  capped 3/7
+
+smart_hub/Philips Hue/BSB002             homes  5  domains supp>=.5:  1  <.5:  0 []  rhythms 1 [('meethue.com:443', 180, 420)]
+smart_plug/TP-Link                       homes  5  domains supp>=.5:  2  <.5:  0 []  rhythms 1 [('tplinkcloud.com:443', 90, 90)]
+camera/Hikvision/DS-2CD2143G2-I          homes  5  domains supp>=.5:  2  <.5:  0 []  rhythms 0 []
+iot_generic/Tuya                         homes  5  domains supp>=.5:  1  <.5:  0 []  rhythms 1 [('tuyaus.com:8883', 90, 90)]
+doorbell/Ring                            homes  5  domains supp>=.5:  2  <.5:  0 []  rhythms 1 [('ring.com:443', 210, 210)]
+thermostat/Google                        homes  5  domains supp>=.5:  2  <.5:  0 []  rhythms 1 [('nest.com:443', 210, 270)]
+smart_tv/LG                              homes  5  domains supp>=.5:  3  <.5:  2 ['netflix.com', 'youtube.com']  rhythms 0 []
+camera/Wyze                              homes 10  domains supp>=.5:  2  <.5:  0 []  rhythms 1 [('wyzecam.com:443', 330, 420)]
+smart_speaker/Sonos/One                  homes  5  domains supp>=.5:  2  <.5:  2 ['akamaized.net', 'spotify.com']  rhythms 1 [('sonos.com:443', 120, 300)]
+thermostat/ecobee/ecobee3 lite           homes  5  domains supp>=.5:  2  <.5:  0 []  rhythms 1 [('ecobee.com:443', 300, 360)]
+smart_speaker/Amazon                     homes  5  domains supp>=.5:  4  <.5:  0 []  rhythms 1 [('amazon.com:443', 120, 120)]
+printer/HP/HP OfficeJet Pro 9010 series  homes  5  domains supp>=.5:  2  <.5:  0 []  rhythms 1 [('hpeprint.com:443', 360, 420)]
+smart_plug/Shelly                        homes  5  domains supp>=.5:  2  <.5:  0 []  rhythms 1 [('shelly.cloud:6022', 120, 120)]
+streaming_device/Roku                    homes  5  domains supp>=.5:  2  <.5:  2 ['netflix.com', 'youtube.com']  rhythms 0 []
+smart_speaker/Google/Google Nest Mini    homes  5  domains supp>=.5:  3  <.5:  0 []  rhythms 1 [('google.com:5228', 180, 210)]

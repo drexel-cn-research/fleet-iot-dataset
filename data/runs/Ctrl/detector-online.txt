@@ -1,0 +1,19 @@
+151 windows, Oct 23 19:49 to Oct 24 08:20, 21 devices, warm-up 12 windows, k=3.0, recur=3
+
+FLAGS (consecutive windows of one behavior are one episode)
+  Oct 23 20:50  wyze-cam-2       new_rhythm new rigid contact rhythm wyzecam.com:443@390s   [no injection (unexplained)]
+  Oct 23 21:05  hue-bridge       new_rhythm new rigid contact rhythm meethue.com:443@270s   [no injection (unexplained)]
+  Oct 23 21:10  hue-bridge       conns      23 vs baseline 2   [no injection (unexplained)]
+  Oct 23 21:10  roku             rx_bytes   158.4MB vs baseline 7.6KB   [no injection (unexplained)]
+  Oct 23 21:10  roku             new_domain first contact with netflix.com, youtube.com   [no injection (unexplained)]
+  Oct 23 21:15  kasa-plug-2      new_domain first contact with nist.gov   [no injection (unexplained)]
+  Oct 23 23:10  hue-bridge       conns      21 vs baseline 2   [no injection (unexplained)]
+  Oct 23 23:30  lg-tv            rx_bytes   311.3MB vs baseline 25.5KB (3 windows, to 23:45, peak 546.2MB)   [no injection (unexplained)]
+  Oct 23 23:30  lg-tv            new_domain first contact with netflix.com, youtube.com   [no injection (unexplained)]
+  Oct 23 23:35  lg-tv            tx_bytes   1.4MB vs baseline 59.1KB (2 windows, to 23:45, peak 1.4MB)   [no injection (unexplained)]
+  Oct 24 01:20  hue-bridge       conns      22 vs baseline 3   [no injection (unexplained)]
+  Oct 24 01:30  hue-bridge       new_rhythm new rigid contact rhythm meethue.com:443@210s   [no injection (unexplained)]
+  Oct 24 06:45  sonos-one        new_rhythm new rigid contact rhythm sonos.com:443@120s   [no injection (unexplained)]
+
+(no injection log: pass --control or --events to score the flags)
+false positives: 13 unexplained episode(s) over 9.6 supervised device-days = 1.35 per device-day

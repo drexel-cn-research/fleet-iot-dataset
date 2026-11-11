@@ -1,0 +1,4 @@
+.nfs*
+__pycache__/
+*.pyc
+/simulator/iotsim

@@ -1,0 +1,43 @@
+85 windows, Oct 22 06:40 to Oct 23 14:15, 23 devices, warm-up 12 windows, k=3.0, recur=3
+
+FLAGS (consecutive windows of one behavior are one episode)
+  Oct 23 08:40  hue-bridge       new_rhythm new rigid contact rhythm meethue.com:443@390s   [no injection (unexplained)]
+  Oct 23 08:40  kasa-plug-2      new_domain first contact with nist.gov   [no injection (unexplained)]
+  Oct 23 11:20  hik-cam-1        tx_bytes   121.6MB vs baseline 5.2MB   [matches exfil at 11:21:07]
+  Oct 23 11:25  echo-dot         new_dest   4 vs baseline 1   [matches newdest at 11:26:07]
+  Oct 23 11:25  echo-dot         new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 11:26:07]
+  Oct 23 11:30  wyze-cam-1       flows      90 vs baseline 2   [matches scan at 11:31:06]
+  Oct 23 11:30  wyze-cam-1       lan_peers  10 vs baseline 2   [matches scan at 11:31:06]
+  Oct 23 11:35  roku             new_rhythm new rigid contact rhythm lan:9000@30s   [matches beacon at 11:36:06]
+  Oct 23 11:40  ring-doorbell    tx_bytes   81.9MB vs baseline 4.4MB   [matches exfil at 11:41:06]
+  Oct 23 11:40  roku             conns      11 vs baseline 3   [matches beacon at 11:36:06]
+  Oct 23 11:45  hue-bridge       flows      90 vs baseline 16   [matches scan at 11:46:07]
+  Oct 23 11:45  hue-bridge       lan_peers  13 vs baseline 4   [matches scan at 11:46:07]
+  Oct 23 11:50  kasa-plug-1      new_dest   4 vs baseline 0   [matches newdest at 11:51:07]
+  Oct 23 11:50  kasa-plug-1      new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 11:51:07]
+  Oct 23 11:55  nest-mini-1      tx_bytes   104.5MB vs baseline 17.8KB   [matches exfil at 11:56:06]
+  Oct 23 12:00  ecobee           conns      10 vs baseline 2 (2 windows, to 12:10, peak 11)   [matches beacon at 12:01:06]
+  Oct 23 12:00  ecobee           new_rhythm new rigid contact rhythm lan:9000@30s   [matches beacon at 12:01:06]
+  Oct 23 12:05  lg-tv            new_dest   4 vs baseline 1   [matches newdest at 12:06:06]
+  Oct 23 12:05  lg-tv            new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 12:06:06]
+  Oct 23 12:10  tuya-plug-1      flows      90 vs baseline 2   [matches scan at 12:11:06]
+  Oct 23 12:10  tuya-plug-1      lan_peers  11 vs baseline 1   [matches scan at 12:11:06]
+  Oct 23 12:15  wyze-cam-2       tx_bytes   51.4MB vs baseline 3.7MB   [matches exfil at 12:16:07]
+  Oct 23 13:25  hue-bridge       new_rhythm new rigid contact rhythm meethue.com:443@210s   [no injection (unexplained)]
+
+INJECTED EVENTS
+  Oct 23 11:21:07  hik-cam-1        exfil    caught (tx_bytes)
+  Oct 23 11:31:06  wyze-cam-1       scan     caught (flows, lan_peers)
+  Oct 23 11:41:06  ring-doorbell    exfil    caught (tx_bytes)
+  Oct 23 11:51:07  kasa-plug-1      newdest  caught (new_dest, new_domain)
+  Oct 23 12:01:06  ecobee           beacon   caught (conns, new_rhythm)
+  Oct 23 12:11:06  tuya-plug-1      scan     caught (flows, lan_peers)
+  Oct 23 11:26:07  echo-dot         newdest  caught (new_dest, new_domain)
+  Oct 23 11:36:06  roku             beacon   caught (new_rhythm, conns)
+  Oct 23 11:46:07  hue-bridge       scan     caught (flows, lan_peers)
+  Oct 23 11:56:06  nest-mini-1      exfil    caught (tx_bytes)
+  Oct 23 12:06:06  lg-tv            newdest  caught (new_dest, new_domain)
+  Oct 23 12:16:07  wyze-cam-2       exfil    caught (tx_bytes)
+
+12 of 12 scored injections caught; 3 flag(s) with no injection behind them
+false positives: 3 unexplained episode(s) over 5.1 supervised device-days = 0.59 per device-day

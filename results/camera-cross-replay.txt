@@ -1,0 +1,10 @@
+== warm-up 12
+ 53c8 vs ref b6f8: local 7 ['10-26 22:35', '10-27 01:35', '10-27 04:35', '10-27 05:45', '10-27 07:35', '10-27 08:20', '10-28 02:20']
+    combined 2 ['10-27 07:35', '10-27 08:20']  [new_domain, tx_bytes, flows, dst_count, new_dest, new_domain]
+ b6f8 vs ref 53c8: local 4 ['10-26 22:35', '10-27 01:35', '10-27 05:45', '10-27 09:50']
+    combined 2 ['10-27 05:45', '10-27 09:50']  [tx_bytes, flows, conns, tx_bytes]
+== warm-up 0
+ 53c8 vs ref b6f8: local 8 ['10-26 19:40', '10-26 22:35', '10-27 01:35', '10-27 04:35', '10-27 05:45', '10-27 07:35', '10-27 08:20', '10-28 02:20']
+    combined 2 ['10-27 07:35', '10-27 08:20']  [new_domain, tx_bytes, flows, dst_count, new_dest, new_domain]
+ b6f8 vs ref 53c8: local 6 ['10-26 19:40', '10-26 19:45', '10-26 22:35', '10-27 01:35', '10-27 05:45', '10-27 09:50']
+    combined 3 ['10-26 19:45', '10-27 05:45', '10-27 09:50']  [flows, tx_bytes, flows, conns, tx_bytes]

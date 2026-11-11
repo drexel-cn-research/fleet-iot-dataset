@@ -1,0 +1,18 @@
+STEP idle 1792954711 start
+STEP idle 1792955011 end
+STEP 50M 1792955011 start
+[  5]   0.00-300.00 sec  1.75 GBytes  50.0 Mbits/sec    0            sender
+[  5]   0.00-300.01 sec  1.75 GBytes  50.0 Mbits/sec                  receiver
+STEP 50M 1792955311 end
+STEP 200M 1792955316 start
+[  5]   0.00-300.00 sec  6.98 GBytes   200 Mbits/sec    0            sender
+[  5]   0.00-300.01 sec  6.98 GBytes   200 Mbits/sec                  receiver
+STEP 200M 1792955616 end
+STEP 500M 1792955621 start
+[  5]   0.00-300.00 sec  17.5 GBytes   500 Mbits/sec    0            sender
+[  5]   0.00-300.00 sec  17.5 GBytes   500 Mbits/sec                  receiver
+STEP 500M 1792955921 end
+STEP max 1792955926 start
+[  5]   0.00-300.00 sec  32.8 GBytes   939 Mbits/sec  1312            sender
+[  5]   0.00-300.00 sec  32.8 GBytes   939 Mbits/sec                  receiver
+STEP max 1792956226 end

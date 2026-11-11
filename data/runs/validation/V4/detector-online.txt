@@ -1,0 +1,48 @@
+70 windows, Oct 20 15:49 to Oct 20 21:35, 20 devices, warm-up 12 windows, k=3.0, recur=3
+
+FLAGS (consecutive windows of one behavior are one episode)
+  Oct 20 16:55  nest-thermostat  new_rhythm new rigid contact rhythm nest.com:443@240s   [no injection (unexplained)]
+  Oct 20 17:15  kasa-plug-2      new_domain first contact with nist.gov   [no injection (unexplained)]
+  Oct 20 17:50  ring-doorbell    tx_bytes   1.4MB vs baseline 3.2KB   [no injection (unexplained)]
+  Oct 20 17:55  hue-bridge       conns      21 vs baseline 2   [no injection (unexplained)]
+  Oct 20 18:30  hue-bridge       new_rhythm new rigid contact rhythm meethue.com:443@390s   [no injection (unexplained)]
+  Oct 20 19:10  roku             rx_bytes   89.2MB vs baseline 7.5KB (3 windows, to 19:25, peak 218.1MB)   [no injection (unexplained)]
+  Oct 20 19:10  roku             new_domain first contact with netflix.com, youtube.com   [no injection (unexplained)]
+  Oct 20 19:15  roku             tx_bytes   1.2MB vs baseline 5.7KB (2 windows, to 19:25, peak 1.2MB)   [no injection (unexplained)]
+  Oct 20 19:40  lg-tv            rx_bytes   126.3MB vs baseline 8.7KB   [no injection (unexplained)]
+  Oct 20 19:40  lg-tv            new_domain first contact with netflix.com, youtube.com   [no injection (unexplained)]
+  Oct 20 19:45  lg-tv            tx_bytes   2.6MB vs baseline 10.5KB (2 windows, to 19:55, peak 2.6MB)   [no injection (unexplained)]
+  Oct 20 19:45  lg-tv            rx_bytes   528.7MB vs baseline 11.7KB (3 windows, to 20:00, peak 546.2MB)   [no injection (unexplained)]
+  Oct 20 19:55  hue-bridge       conns      19 vs baseline 2   [no injection (unexplained)]
+  Oct 20 20:25  hik-cam-1        tx_bytes   60.6MB vs baseline 12.4MB   [matches exfil at 20:27:08]
+  Oct 20 20:30  echo-dot         new_dest   4 vs baseline 0   [matches newdest at 20:32:08]
+  Oct 20 20:30  echo-dot         new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 20:32:08]
+  Oct 20 20:40  roku             new_rhythm new rigid contact rhythm lan:9000@30s   [matches beacon at 20:42:09]
+  Oct 20 20:45  ring-doorbell    tx_bytes   92.4MB vs baseline 3.7MB   [matches exfil at 20:47:09]
+  Oct 20 20:45  roku             conns      14 vs baseline 3   [matches beacon at 20:42:09]
+  Oct 20 20:55  kasa-plug-1      new_dest   4 vs baseline 0   [matches newdest at 20:57:08]
+  Oct 20 20:55  kasa-plug-1      new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 20:57:08]
+  Oct 20 21:00  nest-mini-1      tx_bytes   75.8MB vs baseline 22.5KB   [matches exfil at 21:02:08]
+  Oct 20 21:05  ecobee           new_rhythm new rigid contact rhythm lan:9000@30s   [matches beacon at 21:07:08]
+  Oct 20 21:10  ecobee           conns      10 vs baseline 1   [matches beacon at 21:07:08]
+  Oct 20 21:10  lg-tv            new_dest   4 vs baseline 1   [matches newdest at 21:12:08]
+  Oct 20 21:10  lg-tv            new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 21:12:08]
+  Oct 20 21:20  wyze-cam-2       tx_bytes   85.6MB vs baseline 4.0MB   [matches exfil at 21:22:08]
+
+INJECTED EVENTS
+  Oct 20 15:58:44  nest-thermostat  scan     MISSED
+  Oct 20 20:27:08  hik-cam-1        exfil    caught (tx_bytes)
+  Oct 20 20:37:08  wyze-cam-1       scan     MISSED
+  Oct 20 20:47:09  ring-doorbell    exfil    caught (tx_bytes)
+  Oct 20 20:57:08  kasa-plug-1      newdest  caught (new_dest, new_domain)
+  Oct 20 21:07:08  ecobee           beacon   caught (new_rhythm, conns)
+  Oct 20 21:17:09  tuya-plug-1      scan     MISSED
+  Oct 20 20:32:08  echo-dot         newdest  caught (new_dest, new_domain)
+  Oct 20 20:42:09  roku             beacon   caught (new_rhythm, conns)
+  Oct 20 20:52:08  hue-bridge       scan     MISSED
+  Oct 20 21:02:08  nest-mini-1      exfil    caught (tx_bytes)
+  Oct 20 21:12:08  lg-tv            newdest  caught (new_dest, new_domain)
+  Oct 20 21:22:08  wyze-cam-2       exfil    caught (tx_bytes)
+
+9 of 13 injections caught; 13 flag(s) with no injection behind them
+false positives: 13 unexplained episode(s) over 4.0 supervised device-days = 3.25 per device-day

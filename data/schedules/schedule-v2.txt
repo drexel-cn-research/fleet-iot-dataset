@@ -1,0 +1,39 @@
+# Injection schedule v2 (Run 8): population context. Committed before the run.
+# Times are explicit (run with SPACING=0). Conditions are 20 minutes apart so
+# the class-level change rate (rho) of one condition never overlaps the next;
+# a beacon lasts 10 minutes. Home A = RPI5-IoT (main LAN), home B = RPI4-IoT
+# (routed subnet).
+#
+#   isolated       one device of a class changes; its class peers stay clean
+#   within-home    two devices of one model in one home change together
+#   cross-home     the same model in both homes changes together
+#   spreading      a class changes one device at a time, across both homes
+#
+# Beacon conditions compare isolated vs. cross-home on cameras (camera class:
+# hik-cam-1/2, wyze-cam-1/2). New-destination conditions compare isolated vs.
+# within-home on speakers (nest-mini-1/2, echo-dot, sonos-one) and isolated vs.
+# spreading on plugs (tuya-plug-1/2, kasa-plug-1/2, shelly-plug).
+#
+# Slots (no inline comments below: inject-schedule.sh reads four fields):
+#      0 min  hik-cam-1    isolated, camera, home B
+#     20 min  wyze-cam-1   cross-home, camera (same model), home B
+#     22 min  wyze-cam-2   ... and home A, 2 min later
+#     40 min  echo-dot     isolated, speaker, home A
+#     60 min  nest-mini-1  within-home, speaker (same model), home A
+#     62 min  nest-mini-2  ... second device, 2 min later
+#     80 min  kasa-plug-1  isolated, plug, home B
+#    100 min  tuya-plug-1  spreading, plug: home B
+#    105 min  kasa-plug-2  ... home B, 5 min later
+#    110 min  shelly-plug  ... home A, 10 min later
+#
+# minutes-after-start  pi        scenario  device
+0    RPI4-IoT  beacon   hik-cam-1
+20   RPI4-IoT  beacon   wyze-cam-1
+22   RPI5-IoT  beacon   wyze-cam-2
+40   RPI5-IoT  newdest  echo-dot
+60   RPI5-IoT  newdest  nest-mini-1
+62   RPI5-IoT  newdest  nest-mini-2
+80   RPI4-IoT  newdest  kasa-plug-1
+100  RPI4-IoT  newdest  tuya-plug-1
+105  RPI4-IoT  newdest  kasa-plug-2
+110  RPI5-IoT  newdest  shelly-plug

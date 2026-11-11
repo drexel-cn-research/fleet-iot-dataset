@@ -1,0 +1,54 @@
+OUR DETECTOR (from the online drift detector)
+  N1     8 flag episodes, 8 device episodes over 8.5 device-days = 0.94/device-day
+  Day    3 flag episodes, 3 device episodes over 5.1 device-days = 0.59/device-day
+  N2     16 flag episodes, 11 device episodes over 9.6 device-days = 1.15/device-day
+  pooled: 0.95 false-alarm device episodes per device-day (the budget below)
+
+ISOLATION FOREST  variant=device    features=volume
+  at matched budget: 8/36 injections caught, 0.91 false-alarm episodes per device-day
+  by scenario: beacon 0/6, exfil 1/12, newdest 3/9, scan 4/9
+  by run:      N1 1/12 fp 2, N2 5/12 fp 8, Day 2/12 fp 11
+  missed:      N1:hik-cam-1(exfil), N1:echo-dot(newdest), N1:wyze-cam-1(scan), N1:roku(beacon), N1:ring-doorbell(exfil), N1:hue-bridge(scan), N1:kasa-plug-1(newdest), N1:nest-mini-1(exfil), N1:ecobee(beacon), N1:lg-tv(newdest), N1:wyze-cam-2(exfil), N2:hik-cam-1(exfil), N2:wyze-cam-1(scan), N2:roku(beacon), N2:nest-mini-1(exfil), N2:ecobee(beacon), N2:lg-tv(newdest), N2:wyze-cam-2(exfil), Day:hik-cam-1(exfil), Day:echo-dot(newdest), Day:wyze-cam-1(scan), Day:roku(beacon), Day:ring-doorbell(exfil), Day:hue-bridge(scan), Day:nest-mini-1(exfil), Day:ecobee(beacon), Day:lg-tv(newdest), Day:wyze-cam-2(exfil)
+  default cut-off (score > 0.5): 36/36 caught, 47.96 false alarms per device-day
+  curve (FP per device-day : caught): 0.2/day:3/36  1.0/day:8/36  2.3/day:9/36  4.6/day:14/36  11.0/day:29/36
+
+ISOLATION FOREST  variant=class     features=volume
+  at matched budget: 5/36 injections caught, 0.91 false-alarm episodes per device-day
+  by scenario: beacon 0/6, exfil 1/12, newdest 1/9, scan 3/9
+  by run:      N1 0/12 fp 2, N2 4/12 fp 9, Day 1/12 fp 10
+  missed:      N1:hik-cam-1(exfil), N1:echo-dot(newdest), N1:wyze-cam-1(scan), N1:roku(beacon), N1:ring-doorbell(exfil), N1:hue-bridge(scan), N1:kasa-plug-1(newdest), N1:nest-mini-1(exfil), N1:ecobee(beacon), N1:lg-tv(newdest), N1:tuya-plug-1(scan), N1:wyze-cam-2(exfil), N2:hik-cam-1(exfil), N2:echo-dot(newdest), N2:wyze-cam-1(scan), N2:roku(beacon), N2:nest-mini-1(exfil), N2:ecobee(beacon), N2:lg-tv(newdest), N2:wyze-cam-2(exfil), Day:hik-cam-1(exfil), Day:echo-dot(newdest), Day:wyze-cam-1(scan), Day:roku(beacon), Day:ring-doorbell(exfil), Day:hue-bridge(scan), Day:kasa-plug-1(newdest), Day:nest-mini-1(exfil), Day:ecobee(beacon), Day:lg-tv(newdest), Day:wyze-cam-2(exfil)
+  default cut-off (score > 0.5): 36/36 caught, 42.73 false alarms per device-day
+  curve (FP per device-day : caught): 0.3/day:1/36  1.0/day:7/36  2.1/day:10/36  3.9/day:20/36  10.4/day:31/36
+
+ISOLATION FOREST  variant=prior-run features=volume
+  at matched budget: 5/36 injections caught, 0.91 false-alarm episodes per device-day
+  by scenario: beacon 0/6, exfil 0/12, newdest 1/9, scan 4/9
+  by run:      N1 1/12 fp 5, N2 2/12 fp 7, Day 2/12 fp 9
+  missed:      N1:hik-cam-1(exfil), N1:echo-dot(newdest), N1:wyze-cam-1(scan), N1:roku(beacon), N1:ring-doorbell(exfil), N1:hue-bridge(scan), N1:kasa-plug-1(newdest), N1:nest-mini-1(exfil), N1:ecobee(beacon), N1:lg-tv(newdest), N1:wyze-cam-2(exfil), N2:hik-cam-1(exfil), N2:echo-dot(newdest), N2:wyze-cam-1(scan), N2:roku(beacon), N2:ring-doorbell(exfil), N2:hue-bridge(scan), N2:nest-mini-1(exfil), N2:ecobee(beacon), N2:lg-tv(newdest), N2:wyze-cam-2(exfil), Day:hik-cam-1(exfil), Day:echo-dot(newdest), Day:roku(beacon), Day:ring-doorbell(exfil), Day:hue-bridge(scan), Day:kasa-plug-1(newdest), Day:nest-mini-1(exfil), Day:ecobee(beacon), Day:lg-tv(newdest), Day:wyze-cam-2(exfil)
+  default cut-off (score > 0.5): 36/36 caught, 38.24 false alarms per device-day
+  curve (FP per device-day : caught): 0.2/day:3/36  1.2/day:5/36  2.3/day:12/36  4.3/day:22/36  10.6/day:33/36
+
+ISOLATION FOREST  variant=device    features=+novelty
+  at matched budget: 14/36 injections caught, 0.91 false-alarm episodes per device-day
+  by scenario: beacon 0/6, exfil 1/12, newdest 9/9, scan 4/9
+  by run:      N1 4/12 fp 4, N2 6/12 fp 10, Day 4/12 fp 7
+  missed:      N1:hik-cam-1(exfil), N1:wyze-cam-1(scan), N1:roku(beacon), N1:ring-doorbell(exfil), N1:hue-bridge(scan), N1:nest-mini-1(exfil), N1:ecobee(beacon), N1:wyze-cam-2(exfil), N2:hik-cam-1(exfil), N2:wyze-cam-1(scan), N2:roku(beacon), N2:nest-mini-1(exfil), N2:ecobee(beacon), N2:wyze-cam-2(exfil), Day:hik-cam-1(exfil), Day:wyze-cam-1(scan), Day:roku(beacon), Day:ring-doorbell(exfil), Day:hue-bridge(scan), Day:nest-mini-1(exfil), Day:ecobee(beacon), Day:wyze-cam-2(exfil)
+  default cut-off (score > 0.5): 35/36 caught, 33.83 false alarms per device-day
+  curve (FP per device-day : caught): 0.1/day:5/36  0.8/day:14/36  2.1/day:16/36  4.5/day:18/36  11.4/day:29/36
+
+ISOLATION FOREST  variant=class     features=+novelty
+  at matched budget: 14/36 injections caught, 0.91 false-alarm episodes per device-day
+  by scenario: beacon 2/6, exfil 0/12, newdest 9/9, scan 3/9
+  by run:      N1 3/12 fp 2, N2 6/12 fp 11, Day 5/12 fp 8
+  missed:      N1:hik-cam-1(exfil), N1:wyze-cam-1(scan), N1:roku(beacon), N1:ring-doorbell(exfil), N1:hue-bridge(scan), N1:nest-mini-1(exfil), N1:ecobee(beacon), N1:tuya-plug-1(scan), N1:wyze-cam-2(exfil), N2:hik-cam-1(exfil), N2:wyze-cam-1(scan), N2:roku(beacon), N2:ring-doorbell(exfil), N2:nest-mini-1(exfil), N2:wyze-cam-2(exfil), Day:hik-cam-1(exfil), Day:wyze-cam-1(scan), Day:roku(beacon), Day:ring-doorbell(exfil), Day:hue-bridge(scan), Day:nest-mini-1(exfil), Day:wyze-cam-2(exfil)
+  default cut-off (score > 0.5): 36/36 caught, 27.52 false alarms per device-day
+  curve (FP per device-day : caught): 0.1/day:4/36  0.8/day:14/36  1.9/day:17/36  4.1/day:20/36  10.4/day:29/36
+
+ISOLATION FOREST  variant=prior-run features=+novelty
+  at matched budget: 15/36 injections caught, 0.91 false-alarm episodes per device-day
+  by scenario: beacon 3/6, exfil 0/12, newdest 9/9, scan 3/9
+  by run:      N1 5/12 fp 4, N2 5/12 fp 10, Day 5/12 fp 7
+  missed:      N1:hik-cam-1(exfil), N1:wyze-cam-1(scan), N1:roku(beacon), N1:ring-doorbell(exfil), N1:hue-bridge(scan), N1:nest-mini-1(exfil), N1:wyze-cam-2(exfil), N2:hik-cam-1(exfil), N2:wyze-cam-1(scan), N2:roku(beacon), N2:ring-doorbell(exfil), N2:hue-bridge(scan), N2:nest-mini-1(exfil), N2:wyze-cam-2(exfil), Day:hik-cam-1(exfil), Day:wyze-cam-1(scan), Day:roku(beacon), Day:ring-doorbell(exfil), Day:hue-bridge(scan), Day:nest-mini-1(exfil), Day:wyze-cam-2(exfil)
+  default cut-off (score > 0.5): 35/36 caught, 27.56 false alarms per device-day
+  curve (FP per device-day : caught): 0.2/day:2/36  0.8/day:15/36  2.0/day:18/36  4.1/day:26/36  10.6/day:32/36
+

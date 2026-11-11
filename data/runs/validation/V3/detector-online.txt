@@ -1,0 +1,37 @@
+146 windows, Oct 19 09:05 to Oct 20 07:15, 21 devices, warm-up 12 windows, k=3.0, recur=3
+
+FLAGS (consecutive windows of one behavior are one episode)
+  Oct 19 20:40  kasa-plug-2      new_domain first contact with nist.gov   [no injection (unexplained)]
+  Oct 19 21:05  nest-mini-1      flows      21 vs baseline 6   [no injection (unexplained)]
+  Oct 19 21:05  nest-mini-2      flows      21 vs baseline 6   [no injection (unexplained)]
+  Oct 19 21:10  lg-tv            flows      31 vs baseline 7 (2 windows, to 21:20, peak 31)   [no injection (unexplained)]
+  Oct 19 22:10  ring-doorbell    tx_bytes   6.5MB vs baseline 1.4MB   [no injection (unexplained)]
+  Oct 19 22:15  hue-bridge       flows      21 vs baseline 1   [no injection (unexplained)]
+  Oct 20 00:15  hue-bridge       flows      22 vs baseline 1   [no injection (unexplained)]
+  Oct 20 06:00  hik-cam-1        tx_bytes   148.0MB vs baseline 10.1MB   [matches exfil at 06:00:41]
+  Oct 20 06:05  echo-dot         new_dest   4 vs baseline 0   [matches newdest at 06:05:42]
+  Oct 20 06:05  echo-dot         new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 06:05:42]
+  Oct 20 06:20  ring-doorbell    tx_bytes   200.3MB vs baseline 3.2MB   [matches exfil at 06:20:41]
+  Oct 20 06:30  kasa-plug-1      new_dest   4 vs baseline 0   [matches newdest at 06:30:41]
+  Oct 20 06:30  kasa-plug-1      new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 06:30:41]
+  Oct 20 06:35  nest-mini-1      tx_bytes   142.4MB vs baseline 26.3KB   [matches exfil at 06:35:42]
+  Oct 20 06:45  lg-tv            new_dest   4 vs baseline 0   [matches newdest at 06:45:41]
+  Oct 20 06:45  lg-tv            new_domain first contact with example.com, example.net, example.org, iana.org   [matches newdest at 06:45:41]
+  Oct 20 06:55  wyze-cam-2       tx_bytes   165.3MB vs baseline 4.5MB   [matches exfil at 06:55:41]
+
+INJECTED EVENTS
+  Oct 20 06:00:41  hik-cam-1        exfil    caught (tx_bytes)
+  Oct 20 06:10:42  wyze-cam-1       scan     MISSED
+  Oct 20 06:20:41  ring-doorbell    exfil    caught (tx_bytes)
+  Oct 20 06:30:41  kasa-plug-1      newdest  caught (new_dest, new_domain)
+  Oct 20 06:40:41  ecobee           beacon   MISSED
+  Oct 20 06:50:41  tuya-plug-1      scan     MISSED
+  Oct 20 06:05:42  echo-dot         newdest  caught (new_dest, new_domain)
+  Oct 20 06:15:41  roku             beacon   MISSED
+  Oct 20 06:25:41  hue-bridge       scan     MISSED
+  Oct 20 06:35:42  nest-mini-1      exfil    caught (tx_bytes)
+  Oct 20 06:45:41  lg-tv            newdest  caught (new_dest, new_domain)
+  Oct 20 06:55:41  wyze-cam-2       exfil    caught (tx_bytes)
+
+7 of 12 injections caught; 7 flag(s) with no injection behind them
+false positives: 7 unexplained episode(s) over 8.9 supervised device-days = 0.79 per device-day

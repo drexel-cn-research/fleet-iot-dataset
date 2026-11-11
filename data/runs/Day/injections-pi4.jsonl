@@ -1,0 +1,6 @@
+{"device":"hik-cam-1","mac":"08:54:11:d7:f1:56","pi":"pi4","scenario":"exfil","time":"2026-10-23T15:21:07Z","type":"hikvision-cam"}
+{"arg":"192.168.50.13,192.168.50.105,192.168.50.182,192.168.50.80,192.168.50.227,192.168.50.253,192.168.50.66,192.168.50.229,192.168.50.172,192.168.50.110","device":"wyze-cam-1","mac":"2c:aa:8e:16:b8:1e","pi":"pi4","scenario":"scan","time":"2026-10-23T15:31:06Z","type":"wyze-cam"}
+{"device":"ring-doorbell","mac":"18:7f:88:b4:c9:86","pi":"pi4","scenario":"exfil","time":"2026-10-23T15:41:06Z","type":"ring-doorbell"}
+{"device":"kasa-plug-1","mac":"00:5f:67:30:4a:8f","pi":"pi4","scenario":"newdest","time":"2026-10-23T15:51:07Z","type":"kasa-plug"}
+{"device":"ecobee","mac":"44:61:32:72:79:3c","pi":"pi4","scenario":"beacon","time":"2026-10-23T16:01:06Z","type":"ecobee"}
+{"arg":"192.168.50.13,192.168.50.105,192.168.50.182,192.168.50.80,192.168.50.227,192.168.50.253,192.168.50.66,192.168.50.229,192.168.50.172,192.168.50.110","device":"tuya-plug-1","mac":"10:5a:17:27:d2:ae","pi":"pi4","scenario":"scan","time":"2026-10-23T16:11:06Z","type":"tuya-plug"}
