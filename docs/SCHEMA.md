@@ -92,6 +92,7 @@ One entry per simulated product (paper Table 3): `vendor`, `model`, `class`, `ou
 | `loio-all.txt` | Blocks `tod=<time-of-day buckets> w=<warm-up windows>`, each with one line per group and mode: `<twin, single, all, or run name>\|<local, fleet, combined>  FP <false-alarm episodes> / <device-days> = <rate>  det <caught>/<injections>` |
 | `loio-results.json` | The same numbers keyed by block and group |
 | `loio-robust.txt` | `<variant> w<warm-up> <group>\|<mode> FP <n>/<device-days> = <rate> det <caught>/<injections>` |
+| `loio-thresholds.txt` | `k=<factor> floors x<scale> w<warm-up> <group>\|<mode> FP <n>/<device-days> = <rate> det <caught>/<injections>` |
 | `loio-preexisting.txt` | Detection and false alarms when the change is present from the first window |
 | `rq1.txt` | Per device type: instances and the median, minimum and capped count of n0 across features; then per fleet class: homes, well-supported and weakly supported domains, and rhythm ranges |
 | `fleet-replay.txt` | Run-level holdout results per mode and warm-up, sweeps and ablations |

@@ -10,6 +10,8 @@ echo "fleet replay, leave-one-instance-out (Table 6, Figure 3, no warm-up)"
 python3 ../code/replay/loio_all.py > loio-all.txt
 echo "robustness (tau, h_min, n0 cap, injection-window exclusion)"
 python3 ../code/replay/loio_robust.py > loio-robust.txt
+echo "detector threshold sensitivity (factor k, absolute floors)"
+python3 ../code/replay/loio_thresholds.py > loio-thresholds.txt
 echo "changes present from the first window"
 python3 ../code/replay/loio_preexisting.py > loio-preexisting.txt
 echo "RQ1: n0 per device type and fleet signatures"

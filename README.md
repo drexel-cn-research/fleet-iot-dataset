@@ -60,6 +60,7 @@ cd simulator && go build ./cmd/iotsim && go test ./...     # on Linux; see simul
 | No warm-up: 8.31 vs. 0.14 false alarms per device-day | `code/replay/loio_all.py` | `results/loio-all.txt`, block `tod=True w=0` |
 | Pre-existing changes: 26/26 detected, no false alarms over 5.5 device-days | `code/replay/loio_preexisting.py` | `results/loio-preexisting.txt` |
 | Robustness to tau, h_min, n0 cap, injection-window exclusion | `code/replay/loio_robust.py` | `results/loio-robust.txt` |
+| Robustness to detector thresholds: factor k from 2 to 4, every absolute floor halved or doubled | `code/replay/loio_thresholds.py` | `results/loio-thresholds.txt` |
 | RQ1: n0 per device type, fleet signatures per class | `code/replay/rq1.py` | `results/rq1.txt` |
 | Per-run detection and false alarms, warm-up and tau sweeps, time-of-day ablation (run-level holdout, see below) | `code/replay/all.py` | `results/fleet-replay.txt` |
 | Isolation-forest baseline (5 to 15 of 36 at a matched false-alarm budget) | `code/baseline/iforest-baseline.py` | `results/iforest-baseline.txt` |
